@@ -6,7 +6,7 @@ The purpose of this project is to implement the 'Insertsort' sorting algorithm i
 ## Functional Specification
 Insertsort is an iterative sorting algorithm that, at each step i, divides the array into a sorted destination sequence a[0],..., a[i-1] and an unsorted source sequence a[i],..., a[n-1]. The goal is to insert the value contained in a[i] at the correct position in the destination sequence by sliding it backwards, thus reducing the source sequence by one element.
 
-## 3.1 Assembly Program: "insertsort.s"
+## Assembly Program: "insertsort.s"
 The code consists of four labels, each representing a portion of the code in C language.
 
 1) Start:
@@ -41,16 +41,14 @@ The code consists of four labels, each representing a portion of the code in C l
 
 ## File Versions:
 - **n1.s**:
-  - Applied total loop unrolling optimization.
+  - Total loop unrolling optimization.
 - **n.2.s**
-  - Applied register renaming and instruction reordering to the fully unrolled loop version.
+  - Register renaming and instruction reordering to the fully unrolled loop version.
 - **n.3.s**
-  - Applied partial loop unrolling optimization.
+  - Partial loop unrolling optimization.
   - Multiple versions were created to demonstrate the functionality of the program with either even or odd number of elements in the vector.
 - **n.4.s**
-  - Applied register renaming and instruction reordering to the partially unrolled loop version.
+  - Register renaming and instruction reordering to the partially unrolled loop version.
 - **n.5.s**
-  - Applied partial loop unrolling optimization to the inner 'for' loop for all elements contained within it, eliminating the branch from the previous version.
+  - Partial loop unrolling optimization to the inner 'for' loop for all elements contained within it, eliminating the branch from the previous version.
   - This reduces the number of stalls caused solely by the specific jump instruction.
-
-Please refer to the individual files for the detailed code implementation of each version.
