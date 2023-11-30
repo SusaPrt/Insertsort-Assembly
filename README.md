@@ -1,4 +1,4 @@
-# Project README
+# Computer architecture project
 
 ## Project Purpose
 The purpose of this project is to implement the 'Insertsort' sorting algorithm in Assembly language and optimize the program using the WinMIPS64 Instruction Set Architecture simulator software.
